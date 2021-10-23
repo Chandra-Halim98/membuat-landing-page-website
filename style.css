@@ -1,0 +1,202 @@
+.navbar-brand{
+    font-family: 'Viga', sans-serif;;
+    font-size: 32px;
+}
+
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+
+.nav-item{
+    margin-left: 30px;
+}
+
+.tombol{
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron{
+    background-image: url(img/jumbotron-bg.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    bottom: 0;
+}
+
+.jumbotron .display-4{
+    margin-top: 80px;
+    color: #ffff;
+    font-weight: 200;
+    font-size: 40px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.jumbotron .display-4 span{
+    font-weight: 500;
+}
+
+
+.info-panel{
+    background-color: white;
+    margin-top: -100px;
+    border-radius: 14px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+}
+
+.info-panel img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.info-panel p{
+    font-size: 14px;
+    font-weight: 200;
+    color: #acacac;
+    margin-top: -5px;
+}
+
+
+/* workingspace */
+.working-space{
+    margin-top: 120px;
+    text-align: center;
+}
+
+.working-space h3{
+    font-size: 52px;
+    font-weight: 200;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.working-space h3 span{
+    font-weight: 500;
+}
+
+.working-space p {
+    color: #acacac;
+    font-size: 18px;
+    font-weight: 200;
+    margin: 30px 0;
+}
+
+.testimonial h5{
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 200;
+    margin-top: 100px;
+}
+
+.testimonial .figure img{
+    width: 60px;
+    margin: 20px 10px 10px;
+    border-radius: 50% !important;
+    opacity: 0.6;
+}
+
+.testimonial .figure .utama {
+    width: 90px;
+    opacity: 1;
+    margin-top: 5px;
+} 
+
+.testimonial .figure h4{
+    font-size: 16px;
+    color: #0b106d;
+    text-align: center;
+}
+
+.testimonial .figure p{
+    margin-top: -5px;
+    color: #acacac;
+    text-align: center;
+}
+
+
+/* footer */
+.footer{
+    margin-top: 100px;
+}
+
+.footer p{
+    color: #acacac;
+    font-size: 16px;
+}
+
+
+
+
+
+/* Desktop Version */
+@media (min-width: 992px) { 
+    .nav-link {
+        text-transform: uppercase;
+        text-shadow: rgba(0, 0, 0, 0.6);
+    }
+
+    .tombol{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .jumbotron{
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .navbar-brand, .nav-link{
+        color: white !important;
+    }
+
+    .nav-item:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #6E75F1;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+
+    }
+
+    .jumbotron .display-4{
+        font-size: 62px;
+    }
+
+
+    .working-space{
+        text-align: left;
+    }
+
+    .testimonial h5{
+        font-size: 32px;
+    }
+
+ }
